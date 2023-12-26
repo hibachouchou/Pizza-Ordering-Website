@@ -95,7 +95,7 @@
                                 </div>
                             </div>
                     <div class="form-group">
-                      <input type="submit" value="Confirm Order" class="btn btn-danger py-3 px-4">
+                      <input type="submit" value="Clear Order" class="btn btn-danger py-3 px-4">
                     </div>
                         </form>
                     </div>    			

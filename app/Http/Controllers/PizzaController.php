@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Pizza;
 use App\Models\Order;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class PizzaController extends Controller
@@ -104,4 +105,13 @@ class PizzaController extends Controller
     return  redirect('/dashboard')  ;
 
     }
+
+
+    //register the  user (admin) 
+    public function register_user(){
+//name => Admin_Pizza_House ; email=> pizza.house.admin@gmail.fr ; password=>PizzaHouse@2024
+    }
 }
+
+
+//login the user(admin)

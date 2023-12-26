@@ -100,14 +100,18 @@ body {
 <div>
     <div class="logo"></div>
     <div class="login-block">
-        <h1>Login Admin</h1>
-        <form action="/login_admin" method="POST">
-            @csrf
-         <label>Email </label>
+        <h1>Register Admin</h1>
+        <form action="/register_admin" method="POST">
+         @csrf
+         <label>Username </label>
+        <input type="text" name="username" placeholder="Admin Username" id="username" />
+        <label>Email </label>
         <input type="email" name="email" placeholder="Admin Email" id="email" />
         <label>Password </label>
         <input type="password" name="password" placeholder="Admin Password" id="password" />
-        <button type="submit">Login</button>
+        <label>Repeat Password </label>
+        <input type="password" name="password2" placeholder="Admin Password" id="password2" />
+        <button type="submit">Register</button>
         </form>
        
     </div>
@@ -117,7 +121,6 @@ body {
         alert("{{ session('msg') }}");
     </script>
 @endif
-
 </div>
 
 <!---->

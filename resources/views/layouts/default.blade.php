@@ -32,7 +32,6 @@
     <body >
 
 <!--Navbar Section-->
-
 @include('includes.navbar')
 <!---->
 <!-- Content Section -->

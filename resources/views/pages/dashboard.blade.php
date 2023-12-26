@@ -39,7 +39,15 @@
       <div class="col-md-7 heading-section text-center ">
         <h2 class="mb-4">Welcome Back Admin</h2>
         <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
-        <p class="mt-5">Check the list of orders</p>
+        <p class="mt-5">
+            <a href="{{ url('/logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                <span>Sign Out</span>
+            </a>
+            <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+        </p>
+        <p class="mt-2">Check the list of orders</p>
       </div>
     </div>
     <div class="row">
@@ -66,11 +74,12 @@
 
     </div>
     </div>
-    
-   
-
-
-
+    @if(session('msg'))
+    <script>
+        var alertType = "{{ session('alert', 'info') }}"; // Default to 'info' if not set
+        alert("{{ session('msg') }}");
+    </script>
+@endif
 <!---->
 
     </body>

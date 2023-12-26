@@ -16,30 +16,30 @@
 						<div class="d-md-flex">
 		    				<div class="form-group">
 								<label>Your Full Name</label>
-		    					<input type="text" class="form-control" placeholder="Your Full Name" name="name">
+		    					<input type="text" required class="form-control" placeholder="Your Full Name" name="name">
 		    				</div>
 	    				</div>
 	    				<div class="d-me-flex">
 	    					<div class="form-group">
 								<label>Your Full Address</label>
-		    					<input type="text" class="form-control" placeholder="Your Full Address" name="address">
+		    					<input type="text" required class="form-control" placeholder="Your Full Address" name="address">
 		    				</div>
 	    				</div>
 						<div class="d-me-flex">
 	    					<div class="form-group">
 								<label>Your Phone Number</label>
-		    					<input type="tel" class="form-control" placeholder="Your Phone Number" name="phone">
+		    					<input type="tel" required class="form-control" placeholder="Your Phone Number" name="phone">
 		    				</div>
 	    				</div>
 						<div class="d-me-flex">
 	    					<div class="form-group">
-		    					<input type="text" value="{{$pizza->id}}" class="form-control" hidden name="id">
+		    					<input type="text" required value="{{$pizza->id}}" class="form-control" hidden name="id">
 		    				</div>
 	    				</div>
 						<div class="d-me-flex">
 	    					<div class="form-group">
 								<label>Pizza Size</label>
-		    					<select class="form-select" name="size">
+		    					<select class="form-select" required name="size">
 									<option  name="size" value="Small">Small</option>
 									<option name="size" value="Medium">Medium</option>
 									<option name="size" value="Large">Large</option>
@@ -49,7 +49,7 @@
 						<div class="d-me-flex">
 	    					<div class="form-group">
 								<label>How many pizzas would you like to order?</label>
-		    					<input type="number" class="form-control" placeholder="Number" name="number">
+		    					<input type="number" required class="form-control" placeholder="Number" name="number">
 		    				</div>
 	    				</div>
 						<div class="d-me-flex ">
